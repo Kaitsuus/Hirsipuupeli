@@ -13,7 +13,6 @@ public class Kayttoliityma {
     public void kaynnista() throws FileNotFoundException {
         Henkilo henkilo = new Henkilo();
         Scanner scanner = new Scanner(new File("sanat.txt"));
-        //Scanner lukija = new Scanner(System.in);
         List<String> sanat = new ArrayList<>();
         while (scanner.hasNext()) {
             sanat.add(scanner.nextLine());
@@ -22,7 +21,7 @@ public class Kayttoliityma {
 
         List<Character> arvaus = new ArrayList<>();
         int vaarat = 0;
-        System.out.println(sana);
+        //System.out.println(sana);
         while (true) {
                      
             if (!arvaukset(lukija, sana, arvaus)) {
